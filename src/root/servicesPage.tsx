@@ -41,7 +41,7 @@ export const ServicesPage = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center bg-[#191919] min-h-screen px-6">
+    <div className="flex flex-col items-center bg-[#191919]  px-6">
       <div className="flex flex-col items-center w-full max-w-7xl text-gray-300 my-20 gap-12">
         <div className="text-center max-w-2xl">
           <h1 className="text-4xl md:text-5xl font-bold">

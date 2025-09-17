@@ -1,8 +1,27 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import { useState } from "react";
 
 export const ContactPage = () => {
+
+    const [nome, setNome] = useState("");
+    const [email, setEmail] = useState("");
+    const [company, setCompany] = useState("");
+    const [mensagem, setMensagem] = useState("");
+
+    function enviarWhatsApp() {
+        const telefone = "5519993584612"; // <-- coloque seu número aqui       
+        const texto = `
+        *• Nome:* ${nome}
+        *• E-mail:* ${email}
+        *• Telefone:* ${telefone}
+        *• Mensagem:* ${mensagem}
+        `;
+        const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
+        window.open(url, "_blank"); // abre em nova aba
+    }
+
     return (
-        <div className="flex flex-col items-center text-gray-300 bg-[#191919] min-h-screen px-6">
+        <div id='contact' className="flex flex-col items-center text-gray-300 bg-[#191919] px-6">
             <div className="flex flex-col items-center gap-10 my-16 w-full max-w-7xl">
                 <h1 className="text-4xl font-bold text-center">
                     Entre em <span className="text-amber-400">Contato</span>
@@ -11,8 +30,6 @@ export const ContactPage = () => {
                     Pronto para dar vida às suas ideias? Vamos conversar sobre como podemos desenvolver a solução digital perfeita para você.
                 </p>
                 <div className="flex flex-col md:flex-row bg-[#1f1f1f] rounded-2xl shadow-lg w-full overflow-hidden">
-
-
                     <div className="flex flex-col flex-1 p-8 gap-6">
                         <h2 className="text-2xl font-semibold text-amber-400">Envie sua mensagem</h2>
 
@@ -20,41 +37,46 @@ export const ContactPage = () => {
                             <label className="flex flex-col gap-2">
                                 <span>Nome:</span>
                                 <input
+                                    value={nome}
+                                    onChange={(e) => setNome(e.target.value)}
                                     type="text"
                                     className="border border-gray-600 bg-transparent p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400"
                                     placeholder="Seu nome"
                                 />
                             </label>
-
                             <label className="flex flex-col gap-2">
                                 <span>Email:</span>
                                 <input
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
                                     type="email"
                                     className="border border-gray-600 bg-transparent p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400"
                                     placeholder="Seu email"
                                 />
                             </label>
                         </div>
-
                         <label className="flex flex-col gap-2">
                             <span>Empresa:</span>
                             <input
+                                value={company}
+                                onChange={(e) => setCompany(e.target.value)}
                                 type="text"
                                 className="border border-gray-600 bg-transparent p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400"
                                 placeholder="Sua empresa"
                             />
                         </label>
-
                         <label className="flex flex-col gap-2">
                             <span>Mensagem:</span>
                             <textarea
+                                value={mensagem}
+                                onChange={(e) => setMensagem(e.target.value)}
                                 rows={5}
                                 className="border border-gray-600 bg-transparent p-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400 resize-none"
                                 placeholder="Digite sua mensagem..."
                             />
                         </label>
-
-                        <button className="bg-amber-400 hover:bg-amber-500 transition text-gray-900 font-semibold p-3 rounded-xl cursor-pointer">
+                        <button onClick={enviarWhatsApp}
+                            className="bg-amber-400 hover:bg-amber-500 transition text-gray-900 font-semibold py-3 rounded-xl cursor-pointer">
                             Enviar Mensagem
                         </button>
                     </div>

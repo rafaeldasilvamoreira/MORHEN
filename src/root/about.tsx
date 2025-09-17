@@ -1,4 +1,7 @@
+
+
 export const AboutPage = () => {
+
   const aboutInfo = [
     {
       title: "200+",
@@ -20,7 +23,7 @@ export const AboutPage = () => {
 
   return (
     <div className="flex flex-col items-center bg-[#171717] h-auto px-6">
-      <div className="flex flex-col lg:flex-row justify-between items-center gap-12 w-full max-w-7xl text-gray-300 my-20">     
+      <div className="flex flex-col lg:flex-row justify-between items-center gap-12 w-full max-w-7xl text-gray-300 my-20">
         <div className="flex flex-col gap-6 text-center lg:text-left w-full lg:w-1/2">
           <h1 className="text-4xl font-bold">
             Sobre a <span className="text-amber-400">MORHEN</span>
@@ -35,7 +38,8 @@ export const AboutPage = () => {
             dos nossos clientes, utilizando as tecnologias mais modernas e
             práticas de desenvolvimento ágil.
           </p>
-          <button className="lg:mx-0 sm:w-full flex items-center justify-center gap-2 bg-amber-400 text-gray-900 font-semibold p-4 rounded-xl hover:bg-amber-400/80 cursor-pointer transition duration-300">
+          <button
+            className="lg:mx-0 sm:w-full flex items-center justify-center gap-2 bg-amber-400 text-gray-900 font-semibold py-3 rounded-xl hover:bg-amber-400/80 cursor-pointer transition duration-300">
             Ver Portfólio
           </button>
         </div>
