@@ -14,28 +14,28 @@ export const Dashboard = () => {
                     <br />
                 </div>
                 <div className="text-center my-4">
-                    <h1 className="text-6xl md:text-7xl sm:4xl font-extrabold tracking-tight">
+                    <h1 className="text-6xl md:text-7xl sm:3xl font-extrabold tracking-tight">
                         MORHEN
                     </h1>
-                    <h2 className="text-lg md:text-xl sm:text-md font-light tracking-widest text-gray-400">
+                    <h2 className="text-lg md:text-xl sm:text-sm font-light tracking-widest text-gray-400">
                         DEVELOPMENT AND TECHNOLOGY
                     </h2>
                 </div>
                 <div className="flex flex-col md:flex-row gap-10 items-center">
                     <div className="flex flex-col text-gray-300 gap-6 flex-1">
                         <div className="flex flex-col gap-4">
-                            <h2 className="text-3xl md:text-4xl font-bold leading-snug">
+                            <h2 className="text-3xl max-sm:text-2xl max-sm:text-center font-bold leading-snug">
                                 Transformamos suas ideias em{" "}
                                 <span className="text-amber-400">soluções digitais</span> inovadoras
                             </h2>
-                            <p className="text-lg text-gray-400">
+                            <p className="text-lg max-sm:text-sm max-sm:text-center text-gray-400">
                                 Desenvolvimento de software personalizado, aplicações web e mobile
                                 que impulsionam o crescimento do seu negócio digital.
                             </p>
                         </div>
                         <div className="flex ">
                             <a  href="#contact"
-                                className="flex items-center justify-center gap-2 bg-amber-400 text-gray-900 font-semibold px-6 py-3 rounded-xl hover:bg-amber-400/80 shadow-lg transition duration-300">
+                                className="flex items-center justify-center max-sm:w-full gap-2 bg-amber-400 text-gray-900 font-semibold px-6 py-3 rounded-xl hover:bg-amber-400/80 shadow-lg transition duration-300">
                                 Solicitar Orçamento
                                 <ArrowRight size={18} />
                             </a>                       

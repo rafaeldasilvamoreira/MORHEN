@@ -28,12 +28,12 @@ export const AboutPage = () => {
           <h1 className="text-4xl font-bold">
             Sobre a <span className="text-amber-400">MORHEN</span>
           </h1>
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-gray-400 leading-relaxed max-sm:text-justify max-sm:text-sm">
             A MorHen é uma empresa especializada em desenvolvimento de software
             e soluções tecnológicas inovadoras. Transformamos ideias em
             aplicações digitais de alta qualidade.
           </p>
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-gray-400 leading-relaxed max-sm:text-justify max-sm:text-sm">
             Nossa missão é criar soluções digitais que impulsionam o crescimento
             dos nossos clientes, utilizando as tecnologias mais modernas e
             práticas de desenvolvimento ágil.

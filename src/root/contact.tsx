@@ -26,7 +26,7 @@ export const ContactPage = () => {
                 <h1 className="text-4xl font-bold text-center">
                     Entre em <span className="text-amber-400">Contato</span>
                 </h1>
-                <p className="text-lg text-gray-400 text-center max-w-2xl">
+                <p className="text-lg text-gray-400 text-center max-w-2xl max-sm:text-center max-sm:text-sm">
                     Pronto para dar vida às suas ideias? Vamos conversar sobre como podemos desenvolver a solução digital perfeita para você.
                 </p>
                 <div className="flex flex-col md:flex-row bg-[#1f1f1f] rounded-2xl shadow-lg w-full overflow-hidden">

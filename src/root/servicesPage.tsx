@@ -43,11 +43,11 @@ export const ServicesPage = () => {
   return (
     <div className="flex flex-col items-center bg-[#191919]  px-6">
       <div className="flex flex-col items-center w-full max-w-7xl text-gray-300 my-20 gap-12">
-        <div className="text-center max-w-2xl">
+        <div className="text-center max-w-2xl ">
           <h1 className="text-4xl md:text-5xl font-bold">
             Nossos <span className="text-amber-400">Serviços</span>
           </h1>
-          <p className="text-lg text-gray-400 mt-4">
+          <p className="text-lg text-gray-400 mt-4 max-sm:text-center max-sm:text-sm">
             Oferecemos soluções completas de desenvolvimento para transformar
             suas ideias em realidade digital com tecnologia de ponta.
           </p>
