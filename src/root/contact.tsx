@@ -31,7 +31,7 @@ export const ContactPage = () => {
                 </p>
                 <div className="flex flex-col md:flex-row bg-[#1f1f1f] rounded-2xl shadow-lg w-full overflow-hidden">
                     <div className="flex flex-col flex-1 p-8 gap-6">
-                        <h2 className="text-2xl font-semibold text-amber-400">Envie sua mensagem</h2>
+                        <h2 className="text-2xl font-semibold text-amber-400 max-sm:w-full">Envie sua mensagem</h2>
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <label className="flex flex-col gap-2">
