@@ -9,10 +9,10 @@ export const Dashboard = () => {
 
     return (
         <div className="flex flex-col items-center text-gray-300 bg-[#191919] ">
-            <div className="flex flex-col items-center gap-10 mb-8 w-full max-w-7xl px-6">
-                <div className="flex w-full h-1 bg-amber-400">
-                    <br />
-                </div>
+            <div className="flex w-full  h-1 bg-amber-400">
+                <br />
+            </div>
+            <div className="flex flex-col items-center gap-10 mb-8 w-full max-w-7xl  px-6">
                 <div className="text-center my-4">
                     <h1 className="text-6xl md:text-7xl sm:3xl font-extrabold tracking-tight">
                         MORHEN
@@ -34,11 +34,11 @@ export const Dashboard = () => {
                             </p>
                         </div>
                         <div className="flex ">
-                            <a  href="#contact"
+                            <a href="#contact"
                                 className="flex items-center justify-center max-sm:w-full gap-2 bg-amber-400 text-gray-900 font-semibold px-6 py-3 rounded-xl hover:bg-amber-400/80 shadow-lg transition duration-300">
                                 Solicitar Orçamento
                                 <ArrowRight size={18} />
-                            </a>                       
+                            </a>
                         </div>
                     </div>
                     <div className="flex flex-col  w-full md:w-1/3 gap-6 ">
