@@ -13,7 +13,7 @@ export const ContactPage = () => {
         const texto = `
         *• Nome:* ${nome}
         *• E-mail:* ${email}
-        *• Telefone:* ${telefone}
+        *• Telefone:* ${telefone} {*Arrumar*}
         *• Mensagem:* ${mensagem}
         `;
         const url = `https://wa.me/${telefone}?text=${encodeURIComponent(texto)}`;
